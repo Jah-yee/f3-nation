@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.0](https://github.com/F3-Nation/f3-nation/compare/auth@2.1.0...auth@2.2.0) (2026-08-14)
+
+
+### Features
+
+* **auth:** issue an id_token on the authorization_code and refresh_token grants ([#749](https://github.com/F3-Nation/f3-nation/issues/749)) ([0a8a25d](https://github.com/F3-Nation/f3-nation/commit/0a8a25d635d618383d57669eff4415b32b6e3fef))
+
 ## [2.1.0](https://github.com/F3-Nation/f3-nation/compare/auth@2.0.9...auth@2.1.0) (2026-08-12)
 
 

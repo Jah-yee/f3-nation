@@ -1,5 +1,19 @@
 # Changelog
 
+## [6.4.0](https://github.com/F3-Nation/f3-nation/compare/api@6.3.0...api@6.4.0) (2026-08-14)
+
+
+### Features
+
+* **auth:** issue an id_token on the authorization_code and refresh_token grants ([#749](https://github.com/F3-Nation/f3-nation/issues/749)) ([0a8a25d](https://github.com/F3-Nation/f3-nation/commit/0a8a25d635d618383d57669eff4415b32b6e3fef))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @acme/api bumped to 0.7.0
+
 ## [6.3.0](https://github.com/F3-Nation/f3-nation/compare/api@6.2.0...api@6.3.0) (2026-08-12)
 
 

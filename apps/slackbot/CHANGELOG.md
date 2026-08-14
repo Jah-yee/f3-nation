@@ -2,6 +2,15 @@
 
 <!-- version list -->
 
+## [2.2.2](https://github.com/F3-Nation/f3-nation/compare/slackbot@2.2.1...slackbot@2.2.2) (2026-08-14)
+
+
+### Bug Fixes
+
+* **slackbot,repo:** make python checks skip cleanly and fix macOS lint bug ([#828](https://github.com/F3-Nation/f3-nation/issues/828)) ([1deaba1](https://github.com/F3-Nation/f3-nation/commit/1deaba1eb57f44e19e9bec8c2883bfbade782069))
+* **slackbot:** acknowledging requests prior to sending loading modal ([#846](https://github.com/F3-Nation/f3-nation/issues/846)) ([8daf80f](https://github.com/F3-Nation/f3-nation/commit/8daf80f8a0a5610216978a3e6c718447ad41b19a))
+* **slackbot:** read selected_time/selected_date for picker elements ([#816](https://github.com/F3-Nation/f3-nation/issues/816)) ([8f3d6fc](https://github.com/F3-Nation/f3-nation/commit/8f3d6fc9610fa839df64b66434d7d929b3355bd9))
+
 ## [2.2.1](https://github.com/F3-Nation/f3-nation/compare/slackbot@2.2.0...slackbot@2.2.1) (2026-08-12)
 
 
