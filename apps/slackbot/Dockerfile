@@ -11,13 +11,18 @@ ENV PYTHONUNBUFFERED=1 \
 
 WORKDIR /app
 
-COPY pyproject.toml uv.lock ./
-COPY packages/db-python ./packages/db-python
-COPY apps/slackbot ./apps/slackbot
+# Create non-root user for runtime
+RUN groupadd --gid 1000 slackbot && useradd --uid 1000 --gid slackbot --shell /bin/bash --create-home slackbot
+
+COPY --chown=slackbot:slackbot pyproject.toml uv.lock ./
+COPY --chown=slackbot:slackbot packages/db-python ./packages/db-python
+COPY --chown=slackbot:slackbot apps/slackbot ./apps/slackbot
 
 RUN --mount=type=cache,target=/root/.cache/uv \
-    uv sync --locked --package f3-nation-slack-bot --no-dev --no-editable
+    uv sync --locked --package f3-nation-slack-bot --no-dev --no-editable && \
+    chown slackbot:slackbot /app
 
 WORKDIR $APP_HOME
+USER slackbot
 EXPOSE 8080
 CMD ["functions-framework", "--target", "handler", "--port", "8080"]
